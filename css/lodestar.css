@@ -1,0 +1,64 @@
+#black-background{
+	background-color: #000000;
+	padding-top: 5px;
+ 	padding-bottom: 5px;
+}
+
+#white-background{
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+}
+
+#nontop-border{
+	border-left:1px solid #000000;
+	border-right:1px solid #000000;
+	border-bottom:1px solid #000000;
+}
+
+#nonleft-border{
+
+	border-right:1px solid #000000;
+	border-bottom:1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+#nonright-border{
+	border-left:1px solid #000000;
+	
+	border-bottom:1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+#nonbottom-border{
+	border-left:1px solid #000000;
+	border-right:1px solid #000000;
+	border-bottom:1px solid #000000;
+
+}
+
+
+#gray-background{
+	background-color:#A9A9A9;
+	border: 1px solid #000000;
+}
+
+#bigger-text{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#form-div{
+	padding-left:0px;
+	padding-top:8px;
+}
+
+#input-area{
+	position: relative;
+ 	min-height: 1px;
+ 	padding-right: 0px;
+ 	padding-left: 0px;
+}
+
+#white-font{
+	color: #FFFFFF;
+	font-weight:bold;
+}

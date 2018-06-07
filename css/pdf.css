@@ -1,0 +1,189 @@
+  .row{padding:5px 0}
+  .top-inputs {background-color: #fff;border: 0 none;border-radius: 4px;box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);padding: 0 15px;}
+  .fs-title {font-size: 20px;font-weight: bold;margin: 25px 0; padding-bottom: 0;padding-top: 0;}
+  .les-input {padding-top: 2px;}
+  .top-label {font-size: 15px; margin-top: 2px;}
+  select {color: #222; cursor: pointer;font-size: 15px;margin-bottom: 10px;margin-top: 0;padding: 1px;width: 100%;}
+  .les-input {padding-top: 2px;}
+  .form-control {border: 1px solid #bdc3c7;border-radius: 6px;box-shadow: none;color: #34495e;font-family: "Lato",Helvetica,Arial,sans-serif;font-size: 10px;height: auto;padding: 3px 6px;    transition: border 0.25s linear 0s, color 0.25s linear 0s, background-color 0.25s linear 0s;}
+  .calcBtn {border-radius: 0 0 3px 3px; margin: 10px -15px 0;}
+
+  .lft-col{
+    width: 330px;
+  }
+
+  .rght-col{
+    width: 330px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0 !important;
+    min-width: 768px;
+  }
+  .container {
+    width: auto;
+    min-width: 750px;
+  }
+
+  .logo img{
+    object-fit: scale-down;
+  }
+
+  input[type=text], select {
+        border: none;
+        display: block;
+        color: #000000;
+        font-size: 14px;
+        width: 100%;
+        height: auto;
+        background: transparent;
+        -webkit-appearance:none;
+    }
+    #form_header { 
+      font-size: 24px;
+      color: #000000 !important;
+      border-bottom: 2px solid #000000 !important;
+      margin-bottom: 10px;
+      font-weight: 700;
+      -webkit-print-color-adjust:exact;
+    }
+
+    .section_header_tab{
+      background-color: #000000 !important;
+      color: #ffffff !important;
+      font-size: 20px;
+      width: 70%;
+      border-radius: 10px 10px 0 0 !important;
+      padding-left: 10px;
+      -webkit-print-color-adjust:exact;
+    }
+
+    .section{
+     padding-left: 10px;
+     font-size: 15px;
+   }
+
+   .section_header{
+    background-color: #d3d3d3 !important;
+    border-top: 1px solid #7A7A7A !important;
+    font-weight: bold !important;
+    -webkit-print-color-adjust:exact;
+  }
+
+  .disclosure_result_row{
+    padding: 0 0 0 5px !important;
+  }
+
+  .no-padding-col{
+    padding: 0 0 0 0;
+  }
+
+  .loan_cost_section{
+    margin-bottom: 20px;
+  }
+
+  #disclosure_form{
+    width: auto;
+    min-width: 750px;
+  }
+
+  .fs-title{
+    display: none;
+  }
+
+  .no-print{
+    display:none;
+  }
+
+  .print-title{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+   a[href]:after {
+    content: none;
+  }
+
+  /* Needed to convert col-md-* to col-xs-* sizes. This is the only way it will print properly. 
+  If other column sizes are added (sm,lg,etc) repeat section for them.*/
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.66666666666666%;
+  }
+  .col-md-10 {
+    width: 83.33333333333334%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.66666666666666%;
+  }
+  .col-md-7 {
+    width: 58.333333333333336%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666666666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333333333%;
+  }
+  .col-md-3 {
+   width: 25%;
+ }
+ .col-md-2 {
+   width: 16.666666666666664%;
+ }
+ .col-md-1 {
+  width: 8.333333333333332%;
+}
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-11 {
+    width: 91.66666666666666%;
+  }
+  .col-sm-10 {
+    width: 83.33333333333334%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-8 {
+    width: 66.66666666666666%;
+  }
+  .col-sm-7 {
+    width: 58.333333333333336%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 41.66666666666667%;
+  }
+  .col-sm-4 {
+    width: 33.33333333333333%;
+  }
+  .col-sm-3 {
+   width: 25%;
+ }
+ .col-sm-2 {
+   width: 16.666666666666664%;
+ }
+ .col-sm-1 {
+  width: 8.333333333333332%;
+}

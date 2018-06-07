@@ -1,0 +1,1232 @@
+/*custom font*/
+ /*@import url(http://fonts.googleapis.com/css?family=Montserrat);*/
+
+/*basic reset*/
+ * { margin: 0; padding: 0;}
+html {/*height: 100%;*/ color: #222;}
+/*** Edited by Divya as per new requirements 06/05/2014***/
+body { font-family: montserrat, arial, verdana;font-size:12px;line-height: 1.4;/*height:100%;*/}
+.container{ padding:15px 1%; 
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    width: 102%;
+    -webkit-overflow-scrolling: touch;}
+body{/*background-image: -o-linear-gradient(top, #D9DED5 2%, #B4BDBF 100%);background: -moz-linear-gradient(center top , #9B9C9A 2%, #DBDEDA 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);background-image: -webkit-linear-gradient(top, #D9DED5 2%, #B4BDBF 100%);background-image: -ms-linear-gradient(top, #D9DED5 2%, #B4BDBF 100%);background-image: linear-gradient(to top, #D9DED5 2%, #B4BDBF 100%);*/}
+.lft{float:left}
+.rgt{float:right}
+.front{z-index:1; background:white;}
+.back{z-index:1;}
+.card_back > div{backface-visibility:inherit; background:white;}
+.card_back > button{backface-visibility:inherit; background:white;}
+/****navPanel****/
+.logo{float:left;width:auto;padding: 0 0 5px 10px}
+#holder{border-color:#8c8c8c;border-style:solid;border-width:3px 1px 1px 1px;height:100%;background: -moz-linear-gradient(center top , #9B9C9A 2%, #DBDEDA 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);background-image: -webkit-linear-gradient(top, #D9DED5 2%, #B4BDBF 100%);background-image: -ms-linear-gradient(top, #D9DED5 2%, #B4BDBF 100%);background-image: linear-gradient(to top, #D9DED5 2%, #B4BDBF 100%);}
+#navMenu ul li {float: right;list-style: none;}
+#navMenu ul li{margin: 15px 2px 0 0;background:#3498DB;padding:10px 6px;border-radius:5px 5px 0 0;cursor:pointer;}
+#navMenu ul li.last{margin-right:0px}
+#navMenu ul li a,ul li.active a{color:#fff;font-weight:bold;outline:none}
+#navMenu ul li.active{background:#8c8c8c;font-style:italic;}
+#navMenu ul li:hover{background:#8c8c8c;}
+#navMenu ul li:hover a{color:#fff;text-decoration:underline;}
+#navMenu ul li.active:hover a{text-decoration:none}
+/****navPanel****/
+.top-label{	font-size: 15px;margin-top: 2px;}
+
+select {font-size:15px;color: #222; margin-bottom:10px;width: 100%;margin-top:0;cursor:pointer;padding:1px;}
+.title{font-size:20px;padding:10px 0}
+.form-control{height:auto;font-size:15px;padding: 3px 6px;border: 1px solid #BDC3C7; font-size:10px;color: #34495e;font-family: "Lato", Helvetica, Arial, sans-serif;-webkit-appearance: none;  border-radius: 6px;  -webkit-box-shadow: none;  box-shadow: none;  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;  transition: border .25s linear, color .25s linear, background-color .25s linear;}
+.form-group.focus .form-control,.form-control:focus {border-color: #1abc9c;outline: 0;-webkit-box-shadow: none;box-shadow: none;}
+.col-md-2 {width: 23%;width: 23%\9 !important;float:left;padding-left:5px;padding-right:0px;}
+.dateRangeCol{float:left;width:75%}
+@media screen and (-webkit-min-device-pixel-ratio:0) {.col-md-2 {width: 23%;}}
+.row .col-md-2:first-child{padding-left:0px}
+.row .col-md-2:nth-child(3){margin-left:50px;}
+.dateRangeCol .col-md-2:nth-child(3){margin-left:0px;}
+.les-input {padding-top: 2px}
+.fs-title {font-weight:bold;padding-top:0px; padding-bottom:0px;font-size:20px;margin:25px 0;}
+/***********Start of Button  Styling***************/
+.btn-info {color: #ffffff;background-color: #3498db}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {color: #ffffff;background-color: #5dade2;border-color: #5dade2;}
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {background: #2c81ba;}
+.btn {outline:none !important;border: none;font-size: 15px;font-weight: normal;line-height: 1.4;border-radius: 4px;padding: 10px 15px;-webkit-font-smoothing: subpixel-antialiased;-webkit-transition: 0.25s linear;  transition: 0.25s linear;}
+.btn:hover,
+.btn:focus { color: #ffffff;}
+.btn:active,
+.btn.active {outline: none;-webkit-box-shadow: none;box-shadow: none;}
+.btn-lg {outline:none;padding: 5px 19px;font-size: 20px;line-height: 1.471;border-radius: 0 0 3px 3px;outline:none}
+.top-inputs{background-color:#fff; border: 0 none; border-radius: 4px; box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4); padding: 0px 15px;behavior/*\**/: url(PIE/PIE.htc)\9;background-color: #fff\0/ !important;}
+.smallLabel{width:12%}
+/***********End of Button  Styling***************/
+
+/*****Start of overlay *****/
+#mask{ position:fixed; top:0;left:0;background:rgb(0,0,0); background:rgba(0,0,0,0.9); z-index:500; width:100%;height:100%;display:none;background:rgb(0,0,0,.9);}
+.overlay{height:90%;width:100%; margin:0 auto; background:white; color:black; padding:10px; position:absolute;filter:alpha(opacity=100); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; z-index:1000;-webkit-border-radius:10px;-moz-border-radius:10px;-o-border-radius:10px;border-radius:10px;overflow: hidden;min-height: 100%;}
+.closeBtn{position:absolute;top:-15px;right:-11px;cursor:pointer}
+.actionImg{position:absolute;top:0;left:-9%}
+.actionImg div{padding-bottom:10px;cursor: pointer;}
+.actionBtn {margin:40px auto;width:8%;}
+.actionBtn input{ background-color: black;border: none;border-radius: 5px; -webkit-border-radius: 5px;-moz-border-radius: 5px;-webkit-box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);color: white;cursor: pointer;font-family: 'Nobile',sans-serif;font-style: italic;font-weight: 900;margin:0px 0px;padding: 7px 20px;
+  &:hover {background-color: lighten(#000, 20%);}&:active {-webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 1); -moz-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 1);box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 1);
+		margin-top:2px;-webkit-transition: all 0.1s ease; -moz-transition: all 0.1s ease;-ms-transition:     all 0.1s ease; -o-transition:      all 0.1s ease;}
+}
+
+
+
+/*****End of overlay*****/
+
+/**********Table Styling of Calculate Details**********/
+table {border-collapse: collapse;width:100%;/* max-width: 640; -moz-border-radius: 4px;-webkit-border-radius: 4px;background-color: #ffffff;border: 1px solid #e8e8e8;border-radius: 5px;*/}
+.tabularDetails{width:98%}
+.tabularDetails table{margin-bottom:10px}
+.tabularDetails table td,th{width:50%;font-size:13px}
+.tabularDetails th div{background-color:#333;color:#fff; border-top-left-radius:6px;border-top-right-radius:6px;padding:5px 10px}
+.tabularDetails .tblHeader{border-bottom:1px solid #000;margin-top:15px}
+.tabularDetails .tblHeader div{background-color: #333;border-top-left-radius: 6px;border-top-right-radius: 6px;color: #fff;padding: 5px 10px;width:50%}
+.tabularDetails table td{padding:2px}
+.tabularDetails table tr td:nth-child(2){text-align:center;}
+.tabularDetails th {border-bottom: 1px solid #1E1E1E;}
+.summationRow td,.tabularDetails table tr:first-child{background:#e6e7e8}
+#tblCont{height:100%;overflow:hidden;}
+/*#tblCont:hover{overflow:auto}*/
+/**********End of Table Styling***************/
+.row{margin:0;}	
+/******form styling******/
+.mrg10{margin:10px;}
+.mrgbot20{margin-bottom:20px}
+.borderGrey{border:1px solid #c0c0c0;border-radius:3px;}
+.pad10{padding:10px}
+.form-field-name{font-size: 13px; margin-top: 10px;width:auto;float:left;width:25%}
+.form-field{float:left;width:25%}
+.instructionForm{font-size:10px;font-weight:bold;font-style:italic}
+.section {background: #3498DB;border: none;height: 36px;padding: 0 3%;float:left;color:#fff;margin-left:3px;border-radius:5px 5px 0 0;font-weight:bold;line-height:32px}
+.RgtTri{width: 0;height: 0;border-bottom: 36px solid #3498DB;border-right: 34px solid transparent;float:left;position:relative;right:3px;}
+.clearfix:after {clear: both;}
+/**Hack for ie7***/
+* + html .clearfix {clear: both;height:0px;width:100%}
+* + html .sectionHeader{height:auto;}
+* + html .form-control{width:90%}
+* + html select{width:97%}
+* + html .row{zoom:1}
+* + html .col-md-2{position:static;}
+.RgtTri{display:none\9 !important;}
+* + html .dateRangeCol{width:74%}
+
+/**hack for ie8 and ie7**/
+#holder{overflow-x:hidden\9 !important}
+#navMenu ul li ,.overlay,.tabularDetails th div,.nicescroll-rails,.bntBlue{behavior/*\**/: url(PIE/PIE.htc)\9;}
+.row .col-md-2:first-child +div +div{margin-left:35px\9;}
+#holder {filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9B9C9A', endColorstr='#DBDEDA',GradientType=0 )}
+.bntBlue{border-radius: 25px;font-size: 15px; margin: 5px;}
+.padBot5{padding-bottom:5px}
+#form{height:360px; padding:5px 10px 5px 5px}
+.searchResult th{border-bottom:3px solid #ccc;padding:5px;width:auto}
+.searchResult td{border-bottom:1px solid #ccc;padding:5px; cursor:pointer;width:auto}
+.searchResult tr:hover td{background:#3498db;color:#fff;}
+/*****End of Styling*****/
+.calcBtn{margin: 10px -15px 0; border-radius:0 0 3px 3px; behavior/*\**/: url(PIE/PIE.htc)\9;}
+.btn-lg,.btn {}
+.required{border:1px solid red}
+#requestedInfo{width:50%;margin-top:22px}
+#LoanOffInfo{width:50%;border-left:1px dotted #c0c0c0;padding-left:8px}
+/*******Mobile Menu******/
+#collapsedMenu{display:none}
+.navMenuDisplay{display:block}
+/*****End of Mobile Menu***/
+/**************************End of Edits by Divya*****************************************************************/
+/*****File upload style****/
+.custom-upload{position: relative;width: 50%;margin-bottom: 10px;}
+#fileName{width:80%;height:30px;border-radius:5px;margin-bottom:0;padding:5px}
+.custom-upload input[type=file]{outline:none;position: relative;text-align: right; -moz-opacity:0 ;filter:alpha(opacity: 0);opacity: 0;z-index: 2;width:100%;}
+.custom-upload .fake-file{position: absolute;top: 0px;left: 0px;width: 100%;padding: 0; margin: 0;z-index: 1;line-height: 100%;}
+/****End of file upload styles****/
+/**************************Start of Edits by Amit*****************************************************************/
+.netSheet {width:80%;margin:0 auto;}
+.netSheet .col-md-2{width: 40% !important;}
+.netSheet .row .col-md-2:first-child{text-align: left}
+.GFE {margin:0}
+.GFE .calcBtn .btn {width:49%;float:left}
+* + html .GFE .calcBtn .btn{width:46%}/*IE7 Hack*/
+/**************************End of Edits by Amit*****************************************************************/
+/*form styles*/
+ #msform {
+    max-width: 1000px;
+    margin: 50px auto;
+    position: relative;
+}
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 5%;
+    /*stacking fieldsets above each other*/
+    position: absolute;
+}
+/*Hide all except first fieldset*/
+ #msform fieldset:not(:first-of-type) {
+    display: none;
+}
+/*inputs*/
+ #msform input, #msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    /*font-family: montserrat;*/
+    color: #2C3E50;
+    /*font-size: 13px;*/
+    font-size: 16px;
+    font-family: montserrat, arial, verdana;
+}
+#msform input[type="radio"]{
+    width:auto;
+}
+#msform input:hover, #msform textarea:focus {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+/*buttons*/
+ #msform .action-button {
+    width: 100px;
+    background: #27AE60;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+/*headings*/
+ 
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+/*progressbar*/
+ #progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 10%;
+    float: left;
+    position: relative;
+	
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: #333;
+    background: white;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+	
+}
+/*progressbar connectors*/
+ #progressbar li:after {
+    content:'';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1;
+    /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+/*marking active/completed steps green*/
+
+/*The number of the step and the connector before it = green*/
+ #progressbar li.active:before, #progressbar li.active:after {
+    background: #27AE60;
+    color: white;
+}
+
+textarea {
+    color: #222;
+    margin-bottom:10px;
+    height:100%;
+}
+div #cema-results {
+    padding:20px;
+}
+/******Commented to delete -By Divya 06/06/2014****/
+/*td {
+    padding: 6px;
+    /*border: 1px solid #ccc;
+    text-align: center;
+}*/
+textarea {
+    resize: vertical;
+    width:97.5% !important;
+    padding:10px;
+    border:3px solid #999;
+    box-sizing:border-box;
+    /*height:auto !important;*/
+}
+
+input {
+    color: #222;
+    margin-bottom:10px;
+    display: inline;
+}
+.ui-field-contain label.ui-select {
+    vertical-align:middle;
+    width:40%;
+}
+label.select.ui-select {
+    display:inline;
+}
+label {
+    text-shadow:none;
+}
+h2 {
+    font: 22px/1 Arial, sans-serif, bold;
+    text-shadow:none;
+}
+h3 {
+    font: 16px/1 Arial, sans-serif, bold;
+    text-shadow:none;
+}
+
+#container {
+    min-height:100%;
+    position:relative;
+    padding:0px 0px 0px 20px;
+    margin:0px;
+}
+a {
+    color: #00e;
+}
+a:visited {
+    color: #551a8b;
+}
+a:hover {
+    color: #06e;
+}
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+ #top-link {
+    background-image: url('../img/header2.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size:358px 120px;
+    background-position:center;
+    padding-top:68px;
+    padding-bottom:0px;
+    margin-bottom:0px;
+    display:block;
+    width:358px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* #headline1 {
+      background-image: url('../img/header2.jpg') ;
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size:358px 120px;
+      background-position:center;
+      padding-top:68px;
+      padding-bottom:0px;
+      margin-bottom:0px;
+   }
+*/
+ #headSpan {
+    width:100%;
+    height:30px;
+    margin-top:0px;
+    margin-bottom:10px;
+    margin-right:auto;
+    margin-left:auto;
+    background-color:#5D0045;
+}
+img {
+    vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+ fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+ #headline-instructions {
+    position: relative;
+    top: -5px;
+    background-color: #004F56;
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-left:auto;
+    margin-right:auto;
+    vertical-align: middle;
+    width:100%;
+    box-shadow: 0 0 5px 3px #888888 inset;
+    color: #fff;
+}
+#forms {
+    position:relative;
+    border-radius: 15px;
+    width:90%;
+    display:block;
+    background-color:#5D0045;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom: 20px;
+    margin-top:20px;
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color: #fff;
+    font: 18px/1 Arial, sans-serif, bold;
+    box-shadow: 5px 5px 5px #888888;
+}
+#forms h1 {
+    margin-top:20px;
+    margin-bottom:15px;
+    border-bottom: 2px solid #004F56;
+    text-align:center;
+    width:auto;
+    margin-left:0px;
+    display:inherit;
+    font-size: 20px;
+}
+#body { padding-bottom:113px;}
+}
+#forms {
+    margin-bottom:40px;
+}
+.form-section1 {
+}
+.form-section2 {
+    display: none;
+}
+.form-section3 {
+    display: none;
+}
+.form-section4 {
+    display: none;
+}
+.form-section5 {
+    display: none;
+}
+.form-section6 {
+    display: none;
+}
+.form-section7 {
+    display: none;
+}
+.dynamicForm {
+    font: 12px Arial, sans-serif;
+}
+/* ========================
+ This block is needed so that dynamic table data does not look like shit
+ ========================== */
+ .dynamicForm tr:nth-of-type(odd) {
+    background: #004F56;
+}
+.dynamicForm table {
+    width:99%;
+}
+.dynamicForm table/*, thead, tbody, th, td, tr */{
+    display: block;
+}
+.dynamicForm thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+.dynamicForm tr {
+    border: 1px solid #ccc;
+}
+.dynamicForm td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+}
+
+.dynamicForm td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+.dynamicForm a {
+    color: #808080;
+}
+/*
+    Label the data
+    */
+ .dynamicForm td:nth-of-type(1):before {
+    content:"First Name";
+}
+.dynamicForm td:nth-of-type(2):before {
+    content:"Last Name";
+}
+.dynamicForm td:nth-of-type(3):before {
+    content:"Title";
+}
+.dynamicForm td:nth-of-type(4):before {
+    content:"Email";
+}
+.dynamicForm td:nth-of-type(5):before {
+    content:"Phone #";
+}
+.dynamicForm td:nth-of-type(6):before {
+    content:"Office";
+}
+}
+/* ========================
+ This block is needed so that dynamic table data does not look like shit
+ ========================== */
+ .ui-checkbox {
+    display: block;
+    width:70% !important;
+}
+.ui-checkbox .ui-icon-checkbox-on.ui-icon {
+    background-color:#FFDE1C;
+}
+.ui-loader {
+    display: none;
+}
+.ui-page {
+    height:100%;
+}
+.ui-radio {
+    display: block;
+    width:50%;
+}
+.ui-radio .ui-icon-radio-on.ui-icon {
+    background-color:#FFDE1C;
+}
+div.ui-select {
+    width:50% !important;
+    margin-left: 5px !important;
+    display: inline-block !important;
+    vertical-align:middle;
+}
+.inputButtons {
+    display:inline-block !important;
+    width:40%;
+    margin-top:-10px;
+    margin-bottom:15px;
+    font-size:18px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-radius:20px;
+    background-color:#FFFFFF;
+}
+.centerButtons {
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.footer {
+    /*background-image: url('http://www.res-title.com/images/call-bg.jpg') ; */
+    background-size:450px 120px;
+    background-repeat: no-repeat;
+    background-position:center;
+    color: #000000;
+    background-color: #333;
+    color: #fff;
+    background-image: -webkit-linear-gradient(#3c3c3c, #111);
+    background-image: -moz-linear-gradient(#3c3c3c, #111);
+    background-image: -ms-linear-gradient(#3c3c3c, #111);
+    background-image: -o-linear-gradient(#3c3c3c, #111);
+    background-image: linear-gradient(#3c3c3c, #111);
+    text-align:center;
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-bottom:-1px;
+    margin-top:-1px;
+    position: absolute;
+    width: 100%;
+    bottom:0px;
+    /*border-top:  2px solid #2c2b2b;*/
+    margin-left:auto;
+    margin-right:auto;
+    vertical-align: middle;
+}
+div .next {
+ /*   background-image: url('../img/nextarrow.png');*/
+    background-color:#FFDE1C;
+    left: 270px;
+    top: 15px;
+}
+.homepage-nav {
+    display: block;
+    width: 320px;
+    background: #080808;
+    color: #fff;
+    height: auto;
+    padding-bottom:5px;
+    overflow: visible;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom:20px;
+    /*top: -36px;*/
+    position: relative;
+    left: 0;
+}
+.homepage-nav h1 {
+    font: italic 20px/1 Georgia, serif;
+    padding: 15px 26px 10px;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+	margin-top:20px;
+}
+.homepage-nav ul {
+    padding-left: 0px;
+    vertical-align: baseline;
+    list-style-type: none;
+    font: 24px/1 Arial, sans-serif, bold;
+    margin: 0;
+}
+.homepage-nav li {
+    text-align:left;
+    display: block;
+    vertical-align: baseline;
+    display: list-item;
+    margin: 0;
+    padding: 0;
+}
+.homepage-nav li:first-child {
+    border-top: none;
+}
+.homepage-nav a {
+    color: #fff;
+    display: block;
+    border-top: 1px solid #2c2b2b;
+    margin: 0 11px;
+    padding: 12px 14px;
+    position: relative;
+    width: 272px;
+    padding-right:0px
+}
+.homepage-nav a:hover {
+    border-color: transparent;
+    text-decoration: none;
+}
+.homepage-nav a:hover span {
+    background: transparent none;
+}
+.homepage-nav span {
+    display: block;
+    text-indent: -1000em;
+    width: 10px;
+    height: 13px;
+    /*background-image: url(../images/sprites.png);*/
+    background-position: -61px 0;
+    overflow: hidden;
+    position: absolute;
+    left: 270px;
+    top: 15px;
+}
+.reults-form {
+    display:none;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* Prevent callout */
+ .nocallout {
+    -webkit-touch-callout: none;
+}
+.pressed {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* A hack for HTML5 contenteditable attribute on mobile */
+ textarea[contenteditable] {
+    -webkit-appearance: none;
+}
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+ .gifhidden {
+    position: absolute;
+    left: -100%;
+}
+/*
+ * Image replacement
+ */
+ .ir {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    direction: ltr;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+.ir br {
+    display: none;
+}
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+ .hidden {
+    display: none !important;
+    visibility: hidden;
+}
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+ .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+ .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+ .invisible {
+    visibility: hidden;
+}
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+ .clearfix:before, .clearfix:after {
+    content:"";
+    display: table;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+ .clearfix {
+    *zoom: 1;
+}
+.ui-page {
+    background-color: #C0DEED!important;
+}
+
+div #cema-results {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/******Commented to delete -By Divya 06/06/2014****/
+/*
+td {
+    min-height: 5px;
+    padding: 10px 10% 10px 10%;
+    border-bottom: 1px solid #e8e8e8;
+}*/
+.tdb {
+    background-color: #e8e8e8;
+}
+@media all and (min-width: 600px) {
+/*    div #cema-results {
+        width:550px;
+    */}
+}
+/* Frank's Flat UI */
+ #black-background {
+    background-color: #000000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#white-background {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+}
+#nontop-border {
+    border-left:1px solid #000000;
+    border-right:1px solid #000000;
+    border-bottom:1px solid #000000;
+}
+#nonleft-border {
+    border-right:1px solid #000000;
+    border-bottom:1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+#nonright-border {
+    border-left:1px solid #000000;
+    border-bottom:1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+#nonbottom-border {
+    border-left:1px solid #000000;
+    border-right:1px solid #000000;
+    border-bottom:1px solid #000000;
+}
+#gray-background {
+    background-color:#A9A9A9;
+    border: 1px solid #000000;
+}
+#bigger-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#form-div {
+    padding-left:0px;
+    padding-top:8px;
+}
+#input-area {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+#white-font {
+    color: #FFFFFF;
+    font-weight:bold;
+}
+.big-table{
+	background-color:transparent !important;
+}
+
+.head-tab {
+    background-color: #000000;
+    padding-bottom: 2px;
+    padding-top: 10px;
+    border-top-left-radius: 15px 15px;
+    border-top-right-radius: 15px 15px;
+    color: #FFFFFF;
+    font-weight:bold;
+    font-size:24px;
+}
+.head-box {
+    color:#000000;
+    margin-top:4px;
+    padding-bottom: 2px;
+    padding-top: 10px;
+    text-align:left;
+    width:auto;
+    float:left;
+    font-size:18px;
+}
+.table-body {
+    border-top-style:solid;
+    border-top-width:2px;
+    border-top-color:#787878;
+    %border-bottom-style:solid;
+    border-bottom-width:2px;
+    border-bottom-color:#787878;
+	background-color:white;
+}
+.table-top-head {
+    background-color:#C0C0C0;
+    color:#000000;
+    border-right-style:solid;
+    border-right-width:2px;
+    border-right-color:#787878;
+    font-size:20px;
+}
+.table-head {
+    font-weight:bold;
+    font-size:20px;
+    padding-top:15px;
+    padding-bottom:20px;
+}
+[class*="variable-"] {
+    font-weight:bold;
+    margin-left:0px;
+    padding-left:30px;
+    font-size:20px;
+    padding-top:15px;
+}
+
+.les-select{
+	font-size: 17px;
+	float: left;
+	width: 50%;
+	margin-top: 7px;
+}
+
+.no-top-margin {
+    margin-top:0;
+}
+.table-group>.table-body {
+    border-top:none;
+    border-bottom:none;
+}
+.table-top {
+    background-color:#C0C0C0;
+    color:#000000;
+    text-align:center;
+    width:66.666666%;
+    border-right-style:solid;
+    border-right-width:2px;
+    border-right-color:#787878;
+    font-size:20px;
+}
+
+/*** Tab Menu ***/
+.rgt-tab-menu{
+    padding-left: 0px;
+    padding-bottom: 0px;  
+}
+
+.rgt-tab-menu div.list-group{
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-right: 0 solid;
+    -moz-border-radius: 4px;
+    border-top: 0 solid;
+    border-bottom: 0 solid;
+    padding: 0px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4)
+}
+
+.tab-menu div.list-group .glyph{
+  font-size:20px;
+  margin: 8px 0px 8px 0px;
+}
+
+.tab-menu div.list-group>a:first-child{
+  border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+}
+
+.rgt-tab-menu div.list-group>a:first-child{
+  border-top-right-radius: 4px;
+  -moz-border-top-right-radius: 4px;
+}
+
+.tab-menu div.list-group>a:last-child{
+  border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+}
+
+.rgt-tab-menu div.list-group>a:last-child{
+  border-bottom-right-radius: 4px;
+  -moz-border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 0px;
+  -moz-border-bottom-left-radius: 0px;
+}
+
+.tab-menu div.list-group>a .glyph,
+.tab-menu div.list-group>a{
+    color: #428bca;
+}
+
+.tab-menu div.list-group>a.active,
+.tab-menu div.list-group>a.active .glyph{
+  background-color: #428bca;
+  color: #ffffff;
+}
+
+.tab-menu div.list-group>a.active:after{
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  margin-top: -13px;
+  border-left: 0;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-right: 10px solid #428bca;
+}
+
+.tab>.tab-content:not(.active){
+    display:none;
+}
+
+/* SECTION EDIT CSS */
+form .section-trash-btn.fui-trash{
+    color: #ffffff;
+    background-color: #e74c3c;
+    cursor: pointer;
+    padding: 0px;
+}
+
+form .section-edit-btn.fui-new{
+    color: #ffffff;
+    background-color: #1abc9c; 
+    cursor: pointer;
+    padding: 0px;
+}
+
+form .section-save-btn.fui-lock{
+    color: #ffffff;
+    background-color: #1abc9c; 
+    cursor: pointer;
+    padding: 0px;
+}
+
+/* DRAGGABLE CSS */
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+  top: 0;
+}
+
+/*  combobox results */
+.card_back .lodestar-combobox input{
+    border: none;
+    background-color: #1abc9c;
+    background-image: none;
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 0px;
+    padding-right: 20px;
+}
+
+.card_back .lodestar-combobox a{
+    border: none;
+    background-color: #1abc9c;
+    background-image: none;
+    height: 20px;
+    right: 15px;
+    color: white;
+    width: 0px;
+}
+
+.ui-autocomplete{
+    z-index: 100000 !important;
+}
+
+.lodestar-combobox {
+    position: relative;
+    display: inline-block;
+}
+.lodestar-combobox-toggle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+}
+.lodestar-combobox-input {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.ui-menu .ui-menu-item a{
+    background-image: none;
+    background: red;
+    height: 10px;
+    font-size: 20px;
+}
+
+.disclosure_result_row.placeholder {
+  position: relative;
+  /** More li styles **/
+}
+.disclosure_result_row.placeholder:before {
+  position: absolute;
+  /** Define arrowhead **/
+}
+
+@media screen and (min-width: 1px) and (max-width: 1000px) {
+    .fleft {
+        width:50%;
+        text-align:center;
+        float:left;
+    }
+    .fright {
+        width:50%;
+        text-align:center;
+        float:right;
+    }
+    .table-top {
+        width:100%;
+    }
+    .table-head {
+        border-top:1px solid;
+        border-right:none;
+    }
+    [class*="variable-"] {
+        %border-top:1px solid;
+    }
+    .les-input {
+       
+    }
+}
+
+/**** Responsive Style sheets -Divya 06/05/2014***/
+/* Start Smartphones (portrait and landscape) ----------- */
+    @media (min-width: 1px) and (max-width: 992px) {
+         .col-md-2 {width: 23%; width: 23%\9 !important;}
+    }
+    @media screen and (min-width: 1px) and (max-width : 1000px){
+        .col-md-2 {width: 23%;width: 23%\9 !important;}
+    }
+    @media screen and (max-width : 756px) {
+    .col-md-2 {width: 23%;width: 23%\9 !important;}
+        #navMenu ul li{padding:10px 5px}
+        .top-label {font-size:12px}
+        .row .col-md-2:nth-child(3) {margin-left: 30px;}
+        .row .col-md-2:first-child +div +div{margin-left:15px\9;}
+        select {font-size:12px}
+        .title {font-size: 18px;padding-bottom:5px;}
+        .instructionForm {font-size: 9px;}
+        .netSheet{width:90%}
+        }
+    @media screen and (min-width: 1px) and (max-width : 820px) {
+        .logo{padding:0}
+        #navMenu ul li{font-size:10px}
+        .netSheet{width:90%}        
+        /****Mobile Nav Menu *****/
+        #collapsedMenu{display:block}
+        #navMenu{height:45px;width:45px; float:right;z-index:999999}
+        #collapsedMenu{display:block}
+        #navMenu ul{z-index:999999;position:absolute;background:#fff;right:12px;padding: 5px 0;margin: 2px 0 0;box-shadow: 0 6px 12px rgba(0,0,0,.175);border-radius: 4px;}
+        #navMenu ul li {float:none; border-radius: 0;width:100%;background:#fff;text-align:left;padding:5px 10px;font-size: 12px;}
+        #navMenu ul li a, ul li.active a {color:#000}
+        .navMenuDisplay{display:none}
+        .logo {float:left;margin-bottom:5px;}
+        .logo{height:45px}
+        .logo img{height:45px !important;width:160px !important}
+        #requestedInfo{width:100%;margin-top:22px}
+        #LoanOffInfo{width:100%;border-left:0px dotted #c0c0c0;padding-left:0px;border-top:1px dotted #c0c0c0;padding-top:5px}
+        /****End of Mobile NAV Menu******/
+    }
+    @media screen and (min-width: 1px) and (max-width : 480px) {
+        /*.fs-title{font-size:20px;margin:25px 0;}
+        .top-label {font-size: 15px;margin-top: 10px;}
+        .les-input {padding-top: 10px;}
+        .form-control{font-size:15px}
+        .row .col-md-2:nth-child(3) {margin-left: 8%;}
+        .form-control{font-size:15px;padding: 3px 6px;}
+        select{font-size:15px}
+        .btn-lg{font-size:20px}
+        .logo{float:none;text-align:center}*/
+        .custom-upload{width: 100%}
+        .netSheet{width:90%}        
+        #navMenu{margin-right:0.5%;}
+        #navMenu ul li {height: 30px;padding: 2px 3px;text-align: center;}
+        .col-md-2 {float: left; padding-left: 0; padding-right: 0; width: 50% !important;}
+        .row .col-md-2:nth-child(3) {margin-left: 0;padding-left:0}
+        .row .col-md-2:first-child +div +div{margin-left:0px\9;}
+        .closeBtn{width:15px; height:15px;right: -2%;top: -1%;}
+        .actionImg{position:absolute;top:3%;/*right:4%*/left:-9%}
+        .printer{width:25px; height:25px}
+        .emailIcon{width:25px; height:25px}
+        .overlay{height: 94%}
+        .top-label {font-size: 11px;}
+        .copyTxt{font-size:10px}
+        body{font-size:10px}
+        .dateRangeCol{width:100%}
+        .dateRangeCol .col-md-2 {width:30% !important}
+        .GFE .calcBtn .btn{width:100%;margin-bottom:10px}
+    }
+    /* End Smartphones (portrait and landscape) ----------- */
+    /* Start Smartphones (landscape) ----------- */
+    @media screen and (min-width: 1px) and (max-width : 321px) {
+        .fs-title{font-size:15px;margin:20px 0;}
+        .top-label {font-size: 12px;margin-top: 10px;}
+        .les-input {padding-top: 10px;}
+        .form-control{font-size:12px}
+        select{font-size:12px}
+        .closeBtn{width:15px; height:15px;right: -2%;top: -1%;}
+        .actionImg{position:absolute;top:3%;/*right:4%*/left:-9%}
+        .printer{width:25px; height:25px}
+        .emailIcon{width:25px; height:25px}
+        .tabularDetails table td,th { font-size: 10px;}
+        .overlay{width: 90%;height: 94%;left: 5%; padding: 6px;}
+        #navMenu{margin-right:0;}
+        #navMenu ul li{width:100%}
+        .copyTxt{font-size:8px}
+        .orderby{display: block;width: 100%;}
+        .dateRange .col-md-2:first-child{width:100% !important}
+        .dateRangeCol  .col-md-2{width:100% !important; text-align:center}
+        .logo {width: auto !important;float:left}
+        #collapsedMenu{display:block}
+    }
+    /* End Smartphones (landscape) ----------- */
+    /*Start  Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+    
+    }
+    /* End Smartphones (landscape) ----------- */
+    /* Start iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    }
+    /* End iPads (portrait and landscape) ----------- */
+
+    /*Start  iPads (landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    
+    }
+    /*End  iPads (landscape) ----------- */
+    /* Start iPads (portrait) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+        
+    
+    }
+    
+    /*Start iPhone 4 ----------- */
+    @media only screen and (-webkit-min-device-pixel-ratio : 1.5),
+    only screen and (min-device-pixel-ratio : 1.5) {
+    }
+    /*End Start iPhone 4 ----------- */
+
+/*****End of Responsive Style Sheets********/

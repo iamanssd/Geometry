@@ -1,0 +1,40 @@
+.bootstrap-switch{
+	font-size:13px;
+}
+
+.title{
+	font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.row_calc{
+  display:none;
+}
+
+.buyer_row{
+  display:none;
+}
+
+@media print {
+  input.currency.form-control::-webkit-input-placeholder {
+    color:    #FFFFFF;
+  }
+  input.currency.form-control:-moz-placeholder {
+    color:    #FFFFFF;
+  }
+  input.currency.form-control::-moz-placeholder {
+    color:    #FFFFFF;
+  }
+  input.currency.form-control:-ms-input-placeholder {
+    color:    #FFFFFF;
+  }
+  .header_bot{
+  	border-bottom: 2px solid black;
+  }
+  .row_calc{
+    display:inherit;
+  }
+}

@@ -1,0 +1,55 @@
+/* Style sheet update the old GFE to look proper */
+
+.row {
+margin-bottom: 25px;
+border-bottom: 1px;
+border-style: solid;
+border-top: 1px;
+border-left: 0;
+border-right: 0;
+height: 55px;
+}
+
+.label {
+	font-size: 17.5px;
+	margin-bottom: 2px;
+
+}
+
+@media screen and (max-width : 770px) {
+/* Styles */
+.row {
+		border-style: none;
+		border:0px;
+		height: 100%;
+	}
+.label {
+	font-size: 12px;
+	margin-bottom: 2px;
+
+	}
+[class*="col-"]{
+      margin-bottom: 5px;
+	  border-style: solid;
+	  margin-bottom: 5px;
+	border-style: solid;
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 0px;
+	border-width: 1px;
+  }
+  .label-hide{
+  display: none;
+  }
+  input[type=text]{
+  float: right;
+  width:50%;
+  vertical-align: middle;
+  }
+  select{
+  float: right;
+  }
+  label{
+  vertical-align: text-top;
+  }
+}

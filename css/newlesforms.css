@@ -1,0 +1,889 @@
+/*custom font*/
+ @import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+ * {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+    /*Image only BG fallback*/
+    
+    
+}
+body {
+    font-family: montserrat, arial, verdana;
+	background:url('../Images/gs.png');
+}
+/*form styles*/
+ #msform {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 5%;
+    /*stacking fieldsets above each other*/
+    position: absolute;
+}
+/*Hide all except first fieldset*/
+ #msform fieldset:not(:first-of-type) {
+    display: none;
+}
+/*inputs*/
+ #msform input, #msform  textarea {
+    padding: 15px;
+	padding-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
+	line-height:1;
+}
+#msform input:hover, #msform textarea:focus {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+/*buttons*/
+ #msform .action-button {
+    width: 100px;
+    background: #27AE60;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+/*headings*/
+ .fs-title {
+    font-weight:bold;
+    font-size:20px;
+    padding-top:0px;
+    padding-bottom:20px;
+}
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+/*progressbar*/
+ #progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 10%;
+    float: left;
+    position: relative;
+	
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: #333;
+    background: white;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+	
+}
+/*progressbar connectors*/
+ #progressbar li:after {
+    content:'';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1;
+    /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+/*marking active/completed steps green*/
+
+/*The number of the step and the connector before it = green*/
+ #progressbar li.active:before, #progressbar li.active:after {
+    background: #27AE60;
+    color: white;
+}
+html, textarea {
+    color: #222;
+    margin-bottom:10px;
+    height:100%;
+    min-height:400px;
+}
+div #cema-results {
+    padding:20px;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+td {
+    padding: 6px;
+    /*border: 1px solid #ccc;*/
+    text-align: center;
+}
+textarea {
+    resize: vertical;
+    width:97.5% !important;
+    padding:10px;
+    border:3px solid #999;
+    box-sizing:border-box;
+    height:auto !important;
+}
+select {
+    color: #222;
+    margin-bottom:10px;
+    height: 42px;
+    width:40%;
+}
+input {
+    color: #222;
+    margin-bottom:10px;
+    display: inline;
+	line-height:1;
+}
+.ui-field-contain label.ui-select {
+    vertical-align:middle;
+    width:40%;
+}
+label.select.ui-select {
+    display:inline;
+}
+label {
+    text-shadow:none;
+}
+h2 {
+    font: 22px/1 Arial, sans-serif, bold;
+    text-shadow:none;
+}
+h3 {
+    font: 16px/1 Arial, sans-serif, bold;
+    text-shadow:none;
+}
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    /*background:#aeaeae;*/
+    height:100%;
+    min-height:400px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+#container {
+    min-height:100%;
+    position:relative;
+    padding:0px 0px 0px 20px;
+    margin:0px;
+}
+a {
+    color: #00e;
+}
+a:visited {
+    color: #551a8b;
+}
+a:hover {
+    color: #06e;
+}
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+ #top-link {
+    background-image: url('../img/header2.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size:358px 120px;
+    background-position:center;
+    padding-top:68px;
+    padding-bottom:0px;
+    margin-bottom:0px;
+    display:block;
+    width:358px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* #headline1 {
+      background-image: url('../img/header2.jpg') ;
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size:358px 120px;
+      background-position:center;
+      padding-top:68px;
+      padding-bottom:0px;
+      margin-bottom:0px;
+   }
+*/
+ #headSpan {
+    width:100%;
+    height:30px;
+    margin-top:0px;
+    margin-bottom:10px;
+    margin-right:auto;
+    margin-left:auto;
+    background-color:#5D0045;
+}
+img {
+    vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+ fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+ #headline-instructions {
+    position: relative;
+    top: -5px;
+    background-color: #004F56;
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-left:auto;
+    margin-right:auto;
+    vertical-align: middle;
+    width:100%;
+    box-shadow: 0 0 5px 3px #888888 inset;
+    color: #fff;
+}
+#forms {
+    position:relative;
+    border-radius: 15px;
+    width:90%;
+    display:block;
+    background-color:#5D0045;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom: 20px;
+    margin-top:20px;
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color: #fff;
+    font: 18px/1 Arial, sans-serif, bold;
+    box-shadow: 5px 5px 5px #888888;
+}
+#forms h1 {
+    margin-top:20px;
+    margin-bottom:15px;
+    border-bottom: 2px solid #004F56;
+    text-align:center;
+    width:auto;
+    margin-left:0px;
+    display:inherit;
+    font-size: 20px;
+}
+#body {
+    padding-bottom:113px;
+}
+#forms {
+    margin-bottom:40px;
+}
+.form-section1 {
+}
+.form-section2 {
+    display: none;
+}
+.form-section3 {
+    display: none;
+}
+.form-section4 {
+    display: none;
+}
+.form-section5 {
+    display: none;
+}
+.form-section6 {
+    display: none;
+}
+.form-section7 {
+    display: none;
+}
+.dynamicForm {
+    font: 12px Arial, sans-serif;
+}
+/* ========================
+ This block is needed so that dynamic table data does not look like shit
+ ========================== */
+ .dynamicForm tr:nth-of-type(odd) {
+    background: #004F56;
+}
+.dynamicForm table {
+    width:99%;
+}
+.dynamicForm table, thead, tbody, th, td, tr {
+    display: block;
+}
+.dynamicForm thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+.dynamicForm tr {
+    border: 1px solid #ccc;
+}
+.dynamicForm td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+}
+
+.dynamicForm td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+.dynamicForm a {
+    color: #808080;
+}
+/*
+    Label the data
+    */
+ .dynamicForm td:nth-of-type(1):before {
+    content:"First Name";
+}
+.dynamicForm td:nth-of-type(2):before {
+    content:"Last Name";
+}
+.dynamicForm td:nth-of-type(3):before {
+    content:"Title";
+}
+.dynamicForm td:nth-of-type(4):before {
+    content:"Email";
+}
+.dynamicForm td:nth-of-type(5):before {
+    content:"Phone #";
+}
+.dynamicForm td:nth-of-type(6):before {
+    content:"Office";
+}
+}
+/* ========================
+ This block is needed so that dynamic table data does not look like shit
+ ========================== */
+ .ui-checkbox {
+    display: block;
+    width:70% !important;
+}
+.ui-checkbox .ui-icon-checkbox-on.ui-icon {
+    background-color:#FFDE1C;
+}
+.ui-loader {
+    display: none;
+}
+.ui-page {
+    height:100%;
+}
+.ui-radio {
+    display: block;
+    width:50%;
+}
+.ui-radio .ui-icon-radio-on.ui-icon {
+    background-color:#FFDE1C;
+}
+div.ui-select {
+    width:50% !important;
+    margin-left: 5px !important;
+    display: inline-block !important;
+    vertical-align:middle;
+}
+.inputButtons {
+    display:inline-block !important;
+    width:40%;
+    margin-top:-10px;
+    margin-bottom:15px;
+    font-size:18px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-radius:20px;
+    background-color:#FFFFFF;
+}
+.centerButtons {
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.footer {
+    /*background-image: url('http://www.res-title.com/images/call-bg.jpg') ; */
+    background-size:450px 120px;
+    background-repeat: no-repeat;
+    background-position:center;
+    color: #000000;
+    background-color: #333;
+    color: #fff;
+    background-image: -webkit-linear-gradient(#3c3c3c, #111);
+    background-image: -moz-linear-gradient(#3c3c3c, #111);
+    background-image: -ms-linear-gradient(#3c3c3c, #111);
+    background-image: -o-linear-gradient(#3c3c3c, #111);
+    background-image: linear-gradient(#3c3c3c, #111);
+    text-align:center;
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-bottom:-1px;
+    margin-top:-1px;
+    position: absolute;
+    width: 100%;
+    bottom:0px;
+    /*border-top:  2px solid #2c2b2b;*/
+    margin-left:auto;
+    margin-right:auto;
+    vertical-align: middle;
+}
+div .next {
+    background-image: url('../img/nextarrow.png');
+    background-color:#FFDE1C;
+    left: 270px;
+    top: 15px;
+}
+.homepage-nav {
+    display: block;
+    width: 320px;
+    background: #080808;
+    color: #fff;
+    height: auto;
+    padding-bottom:5px;
+    overflow: visible;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom:20px;
+    /*top: -36px;*/
+    position: relative;
+    left: 0;
+}
+.homepage-nav h1 {
+    font: italic 20px/1 Georgia, serif;
+    padding: 15px 26px 10px;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+	margin-top:20px;
+}
+.homepage-nav ul {
+    padding-left: 0px;
+    vertical-align: baseline;
+    list-style-type: none;
+    font: 24px/1 Arial, sans-serif, bold;
+    margin: 0;
+}
+.homepage-nav li {
+    text-align:left;
+    display: block;
+    vertical-align: baseline;
+    display: list-item;
+    margin: 0;
+    padding: 0;
+}
+.homepage-nav li:first-child {
+    border-top: none;
+}
+.homepage-nav a {
+    color: #fff;
+    display: block;
+    border-top: 1px solid #2c2b2b;
+    margin: 0 11px;
+    padding: 12px 14px;
+    position: relative;
+    width: 272px;
+    padding-right:0px
+}
+.homepage-nav a:hover {
+    border-color: transparent;
+    text-decoration: none;
+}
+.homepage-nav a:hover span {
+    background: transparent none;
+}
+.homepage-nav span {
+    display: block;
+    text-indent: -1000em;
+    width: 10px;
+    height: 13px;
+    /*background-image: url(../images/sprites.png);*/
+    background-position: -61px 0;
+    overflow: hidden;
+    position: absolute;
+    left: 270px;
+    top: 15px;
+}
+.reults-form {
+    display:none;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* Prevent callout */
+ .nocallout {
+    -webkit-touch-callout: none;
+}
+.pressed {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* A hack for HTML5 contenteditable attribute on mobile */
+ textarea[contenteditable] {
+    -webkit-appearance: none;
+}
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+ .gifhidden {
+    position: absolute;
+    left: -100%;
+}
+/*
+ * Image replacement
+ */
+ .ir {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    direction: ltr;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+.ir br {
+    display: none;
+}
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+ .hidden {
+    display: none !important;
+    visibility: hidden;
+}
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+ .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+ .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+ .invisible {
+    visibility: hidden;
+}
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+ .clearfix:before, .clearfix:after {
+    content:"";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+ .clearfix {
+    *zoom: 1;
+}
+.ui-page {
+    background-color: #C0DEED!important;
+}
+table {
+    border-collapse: collapse;
+    width:100%;
+    max-width: 640;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+}
+div #cema-results {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+td {
+    min-height: 5px;
+    padding: 10px 10% 10px 10%;
+    border-bottom: 1px solid #e8e8e8;
+}
+.tdb {
+    background-color: #e8e8e8;
+}
+@media screen and (min-width: 600px) {
+    div #cema-results {
+        width:550px;
+    }
+}
+/* Frank's Flat UI */
+ #black-background {
+    background-color: #000000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#white-background {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+}
+#nontop-border {
+    border-left:1px solid #000000;
+    border-right:1px solid #000000;
+    border-bottom:1px solid #000000;
+}
+#nonleft-border {
+    border-right:1px solid #000000;
+    border-bottom:1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+#nonright-border {
+    border-left:1px solid #000000;
+    border-bottom:1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+#nonbottom-border {
+    border-left:1px solid #000000;
+    border-right:1px solid #000000;
+    border-bottom:1px solid #000000;
+}
+#gray-background {
+    background-color:#A9A9A9;
+    border: 1px solid #000000;
+}
+#bigger-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#form-div {
+    padding-left:0px;
+    padding-top:8px;
+}
+#input-area {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+#white-font {
+    color: #FFFFFF;
+    font-weight:bold;
+}
+.big-table{
+	background-color:transparent !important;
+}
+
+.head-tab {
+    background-color: #000000;
+    padding-bottom: 2px;
+    padding-top: 10px;
+    border-top-left-radius: 15px 15px;
+    border-top-right-radius: 15px 15px;
+    color: #FFFFFF;
+    font-weight:bold;
+    font-size:24px;
+}
+.head-box {
+    background-color:#C0C0C0;
+    color:#000000;
+    padding-bottom: 2px;
+    font-size:14px;
+    text-align:right;
+    width:auto;
+    float:right;
+    margin-top:0px;
+}
+.table-body {
+    border-top-style:solid;
+    border-top-width:2px;
+    border-top-color:#787878;
+    %border-bottom-style:solid;
+    border-bottom-width:2px;
+    border-bottom-color:#787878;
+	background-color:white;
+}
+.table-top-head {
+    background-color:#C0C0C0;
+    color:#000000;
+    border-right-style:solid;
+    border-right-width:2px;
+    border-right-color:#787878;
+    font-size:20px;
+}
+.table-head {
+    font-weight:bold;
+    border-right-style:solid;
+    border-right-width:2px;
+    border-right-color:#787878;
+    font-size:20px;
+    padding-top:15px;
+    padding-bottom:20px;
+}
+[class*="variable-"] {
+    font-weight:bold;
+    margin-left:0px;
+    padding-left:30px;
+    font-size:20px;
+    padding-top:15px;
+}
+.les-input {
+    padding-top:10px;
+	line-height:1;
+}
+.les-select{
+	font-size: 17px;
+	float: left;
+	margin-top: 7px;
+}
+
+.no-top-margin {
+    margin-top:0;
+}
+.table-group>.table-body {
+    border-top:none;
+    border-bottom:none;
+}
+.table-top {
+    background-color:#C0C0C0;
+    color:#000000;
+    text-align:center;
+    width:66.666666%;
+    border-right-style:solid;
+    border-right-width:2px;
+    border-right-color:#787878;
+    font-size:20px;
+}
+
+.top-label{
+	font-size:20px;
+	margin-top:17px;
+}
+
+.top-inputs{
+	background: grey;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 0px 10px;
+    box-sizing: border-box;
+	line-height:1;
+}
+
+.edit-item-button{
+	background-image:url('../Images/Pensils.png');
+	background-size:contain;
+	height:40px;
+	width:40px;
+	margin-top:10px;
+	background-color:white;
+	box-shadow:none;
+	border: none;
+}
+
+.remove-item-button{
+	background-image:url('../Images/trashcan.jpg');
+	background-size:contain;
+	height:40px;
+	width:40px;
+	margin-top:10px;
+	background-color:white;
+	box-shadow:none;
+	border: none;
+}
+
+input[type="text"]{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .fleft {
+        width:50%;
+        text-align:center;
+        float:left;
+    }
+    .fright {
+        width:50%;
+        text-align:center;
+        float:right;
+    }
+    .table-top {
+        width:100%;
+    }
+    .table-head {
+        border-top:1px solid;
+        border-right:none;
+    }
+    [class*="variable-"] {
+        %border-top:1px solid;
+    }
+    .les-input {
+        %border:1px solid;
+		line-height:1;
+    }
+}

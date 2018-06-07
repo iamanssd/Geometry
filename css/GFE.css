@@ -1,0 +1,53 @@
+/* ### GENERAL ### Calculator*/
+* { margin: 0px; padding: 0px; }
+html, body, table { font-family: 'Lucida Grande',arial; font-size: 12px; color: #000000; }
+input, select, textarea { font-family: Arial; font-size: 12px; color: #000000; }
+body { background: #efeee9; }
+img { border: 0px; }
+p { margin-bottom: 10px; font-size: 11px; }
+
+/* ### GLOBAL CLASSES ### */
+.clear { clear: both; height: 30px; }
+a { color: #0078c9; text-decoration: underline; }
+a:hover { text-decoration: none; }
+
+.center{
+margin-left: auto;
+margin-right: auto;
+width: 1024px;
+}
+
+iframe {    border: none;}
+
+
+.left-sidebar { left: 0; width: 15%;  float: left;  }
+.middle { width: 85%;
+    float: left;
+}
+
+
+.navbutton {
+	-moz-box-shadow:inset 0px 0px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #caefab;
+	box-shadow:inset 0px 0px 0px 0px #caefab;
+	background-color:#18295F;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border-spacing: 5px;
+        display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 5px;
+	text-decoration:none;
+        height: 45px;
+        width:80px;
+        alignment-adjust: middle;
+}.navbutton:hover {
+	background-color:#18295F;
+}.navbutton:active {
+	position:relative;
+	top:1px;
+}
