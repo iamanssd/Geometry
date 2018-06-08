@@ -5,6 +5,7 @@ html, body {
 
 a.navbar-brand{
 	text-decoration: none;
+	color: black;
 }
 
 
@@ -18,9 +19,13 @@ a.navbar-brand{
 }
 
 #footer{
-	margin-top: 2%;
-	width: 100%;
+	width: 70%;
 	text-align: center;
+	border-top: solid #e7e7e7;
+	border-width: 1px;
+	padding:none;
+	margin: auto;
+	padding:20px;
 }
 
 #custom-board{
@@ -29,5 +34,43 @@ a.navbar-brand{
 	border-style: solid;
 	border-width: 1px;
 	border-color: #e7e7e7;
-	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right:auto;
+	margin-left:auto;
+	background-color: 	#87ceeb;
 }
+
+#space-for-footer {
+	width: 100%;
+	height: 5%;
+	background-color: transparent;
+	margin-top:1%;
+}
+
+
+#container{
+	width: 100%;
+	padding-top: 2%;
+	height:60%;
+}
+#main-attraction{
+	margin-right: 10%;
+	width: 60%;
+	float: right;
+}
+#side-attraction{
+	padding-top: 5px;
+	margin-left: 3%;
+	width: 21%;
+	float: left;
+}
+
+
+
+#explanations{
+	text-align: justify;
+}
+
+
+

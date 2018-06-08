@@ -18,32 +18,36 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <a class="navbar-brand" href="index.html">Home</a>
-  <a class="navbar-brand" href="proofs.html">Proofs</a>
-  <a class="navbar-brand" href="construction.html">Construction</a>
-  <a class="navbar-brand" href="about.html">About</a>
-</nav>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <a class="navbar-brand" href="index.html">Home</a>
+	  <a class="navbar-brand" href="proofs.html">Proofs</a>
+	  <a class="navbar-brand" href="construction.html">Construction</a>
+	  <a class="navbar-brand" href="about.html">About</a>
+	  <a class="navbar-brand" href="body.html">Body</a>
+	</nav>
 
 	<div id="filler-for-navbar"></div>
-	<div class="board" id="custom-board"></div>
 
-	<script>
-		//pass options and add custom controls to a board
-		var customBoard = new DrawingBoard.Board('custom-board', {
-			controls: [
-				'Color',
-				{ DrawingMode: { filler: false } },
-				{ Navigation: { back: false, forward: false } }
-			],
-			size: 2,
-			webStorage: false
-		});
-			background: "#ffffff"
-	</script>
 
+	<div id="container">	
+		<div id = "main-attraction">
+			<h1><style>h1{text-align:center;}</style>Why were the similar triangles weighing themselves?</h1>
+			<p id="explanations"></p>
+		</div>
+		<div id="side-attraction">
+			<h3>Steps to complete the riddle:</h3>
+			<ol type="1">
+			  <li>Coffee</li>
+			  <li>Tea</li>
+			  <li>Milk</li>
+			</ol>
+		</div>
+	</div>
+
+
+	<div id="space-for-footer"></div>
 	<footer id="footer">
-		<p>This website, GeometryProject&trade;, was made by Samuel Kang, and has been up and running since March 30th, 2018.<br> Click on the "About Me" link on the bar above to find out more about me.</br></p>
+		<p>This website, GeometryProject&trade;, was made by Samuel Kang, and has been up and running since March 30th, 2018.<br> Click on the "About" link on the bar above to find out more about me.</br></p>
 	</footer>
 </body>	
 </html>
