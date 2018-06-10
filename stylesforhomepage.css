@@ -9,30 +9,54 @@ a{
 }
 
 #title{
-	margin:40px 40px;
+	margin:50px 245px;
     color:white;
     font-size: 55px;
 }
 
 #explanation {
 	color:white;
-	opacity: 0;
 	font-size: 30px;
-	text-align: center;
+    float:left;
+    padding-left:65px;
 }
 
-#container{
-
+.container{
 	height:100%;
 	width:100%;
-	margin: auto;
+	text-align:center;
+	margin:auto;
 }
 
 
 #button {
-	background-color:transparent;
-	border-color: white;
-	border-width: 1px;
-	opacity:0;
-	margin:auto;
+    background-color: transparent;
+    border-radius:10px;
+    border-style:solid;
+    border-color: white;
+    border-width: 1px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    text-align:center;
+    position:fixed;
+    left:275px;
+    bottom: 100px;
+
+}
+
+.fading {
+	display:none;
+}
+
+#images{
+    height:200px;
+    width:200px;
+    float: right;
+    position:relative;
+    right: 225px;
+    bottom: 200px;
 }

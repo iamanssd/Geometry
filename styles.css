@@ -68,9 +68,12 @@ a.navbar-brand{
 
 
 
-#explanations{
-	text-align: justify;
+
+
+#blank-spaces{
+	font-size: 40px;
 }
 
-
-
+#center {
+	text-align: center;
+}
