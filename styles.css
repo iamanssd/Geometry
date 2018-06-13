@@ -71,7 +71,7 @@ a.navbar-brand{
 
 
 #b-1{
-	margin-left:123px;
+	margin-left:55px;
 }
 
 .blank-spaces{
@@ -140,5 +140,23 @@ a.navbar-brand{
 
 
 h3{
+	text-align:center;
+}
+
+#problems1 {
+	height:1000px; 
+	width:1000px;
+}
+
+#problems2 {
+	height:1400px;
+	width:850px;
+}
+
+#problems3 {
+	
+}
+
+#sometimes {
 	text-align:center;
 }

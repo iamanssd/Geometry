@@ -1,6 +1,7 @@
 html, body{
 	background-color:#262626;
 	font-family: 'Montserrat', sans-serif;
+    height:70%;
 }
 
 a{
@@ -21,32 +22,6 @@ a{
     padding-left:65px;
 }
 
-.container{
-	height:100%;
-	width:100%;
-	text-align:center;
-	margin:auto;
-}
-
-
-#button {
-    background-color: transparent;
-    border-radius:10px;
-    border-style:solid;
-    border-color: white;
-    border-width: 1px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    text-align:center;
-    position:fixed;
-    left:275px;
-    bottom: 100px;
-
-}
 
 .fading {
 	display:none;
@@ -58,5 +33,5 @@ a{
     float: right;
     position:relative;
     right: 225px;
-    bottom: 200px;
+    bottom: 300px;
 }
